@@ -31,6 +31,6 @@ gulp.task 'watch', ['build'], ->
   gulp.watch 'app/**/*.jade', ['jade']
   gulp.watch '.tmp/**/*', ['webpack']
 
-# gulp.task 'deploy', shell.task [
-#   'git subtree push --prefix public/ origin gh-pages'
-# ]
+gulp.task 'deploy', shell.task [
+  'git subtree push --prefix public/ origin gh-pages'
+]
